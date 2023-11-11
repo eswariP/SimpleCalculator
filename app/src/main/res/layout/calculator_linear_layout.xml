@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- TextView for the result -->
+
+
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="40sp"
+        android:gravity="end"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Buttons for digits (0-9) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="1"
+
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button1" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="2"
+
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button2" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="3"
+
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button3" />
+
+
+        <!-- Add buttons for digits 2-9 similarly -->
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="+"
+
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/buttonPlus" />
+    </LinearLayout>
+
+    <!-- Buttons for 4,5 6,'-' -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button4" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button5" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button6" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/buttonMinus" />
+    </LinearLayout>
+
+    <!--Buttons for 7,8,9,* -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button7" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button8" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button9" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/buttonMultiple" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/buttonClear" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="0"
+              android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/button0" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:backgroundTint="@color/PaleVioletRed"
+            android:id="@+id/buttonEqual" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:backgroundTint="@color/PaleVioletRed"
+
+            android:id="@+id/buttonDiv" />
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+
+            android:text="Advance - With History"
+            android:onClick="toggleCalculatorMode"
+            android:backgroundTint="@color/RoyalBlue"
+            android:id="@+id/buttonAdvanced" />
+
+    <!-- History text view -->
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="History"
+        android:maxLines="10"
+        android:visibility="gone"
+        android:scrollbars="vertical" />
+</LinearLayout>
